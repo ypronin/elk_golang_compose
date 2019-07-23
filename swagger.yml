@@ -1,0 +1,78 @@
+swagger: "2.0"
+info:
+  title: 'App'
+  version: '0.0.1'
+host: localhost:8000
+info:
+  description: DATA TEAM API
+  title: DATA TEAM API
+  version: v1
+schemes:
+  - http
+swagger: "2.0"
+produces:
+  - application/json
+consumes:
+  - application/json
+paths:
+  /health/v1:
+    get:
+      responses:
+        "200":
+          description: Service Health
+          schema:
+            type: string
+        "500":
+          description: Not Ok
+          schema:
+            $ref: '#/definitions/Error'
+      produces:
+        - text/plain
+      schemes:
+        - http
+  /json-schema.json:
+    get:
+      responses:
+        "200":
+          description: Poker Log Json Schema
+          schema:
+            $ref: '#/definitions/PokerTransaction'
+        "500":
+          description: Not Ok
+          schema:
+            $ref: '#/definitions/Error'
+      produces:
+        - text/plain
+      schemes:
+        - http
+definitions:
+  Error:
+    type: object
+    required:
+      - message
+    properties:
+      code:
+        type: integer
+        format: int64
+      message:
+        type: string
+  PokerTransaction:
+    type: object
+    properties:
+      amount:
+        type: integer
+        format: int64
+      transactionID:
+        type: string
+      playerID:
+        type: string
+      playerIP:
+        type: string
+      currencyID:
+        type: string
+      playableBefore:
+        type: integer
+        format: int64
+      playable:
+        type: integer
+        format: int64

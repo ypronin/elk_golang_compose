@@ -1,0 +1,8 @@
+package: github.com/elk_golang_compose
+import:
+- package: github.com/olivere/elastic
+  version: ~v5.0.81
+- package: github.com/sirupsen/logrus
+  version: ~1.4.2
+- package: gopkg.in/sohlich/elogrus.v3
+  version: ~2.1.0

@@ -1,0 +1,93 @@
+hash: 6c93b4e5b40e7a5525f806cfb351fa97a8de751fe74ba7b20b18e2dc56212b3d
+updated: 2019-07-22T12:50:36.083949+03:00
+imports:
+- name: github.com/asaskevich/govalidator
+  version: 7d2e70ef918f16bd6455529af38304d6d025c952
+- name: github.com/docker/go-units
+  version: 47565b4f722fb6ceae66b95f853feed578a4a51c
+- name: github.com/globalsign/mgo
+  version: efe0945164a7e582241f37ae8983c075f8f2e870
+  subpackages:
+  - bson
+  - internal/json
+- name: github.com/go-openapi/analysis
+  version: 5957818e100395077187fb7ef3b8a28227af06c6
+- name: github.com/go-openapi/errors
+  version: d9664f9fab8994271e573ed69cf2adfc09b7a800
+- name: github.com/go-openapi/jsonpointer
+  version: 3a0015ad55fa9873f41605d3e8f28cd279c32ab2
+- name: github.com/go-openapi/jsonreference
+  version: 3fb327e6747da3043567ee86abd02bb6376b6be2
+- name: github.com/go-openapi/loads
+  version: 150d36912387ec2f607be674c5be309ddccc0eed
+- name: github.com/go-openapi/runtime
+  version: 231d7876b7019dbcbfc97a7ba764379497b67c1d
+  subpackages:
+  - flagext
+  - logger
+  - middleware
+  - middleware/denco
+  - middleware/header
+  - middleware/untyped
+  - security
+- name: github.com/go-openapi/spec
+  version: 5bae59e25b21498baea7f9d46e9c147ec106a42e
+- name: github.com/go-openapi/strfmt
+  version: edab9990ffc9b4a428f3306ecf4d18a069ca3317
+- name: github.com/go-openapi/swag
+  version: 5899d5c5e619fda5fa86e14795a835f473ca284c
+- name: github.com/go-openapi/validate
+  version: d2eab7d93009e9215fc85b2faa2c2f2a98c2af48
+- name: github.com/go-swagger/go-swagger
+  version: 2f32a5a852851b98aa1ed3d0d3d2aab4dcf27c6b
+  subpackages:
+  - examples/oauth2/models
+- name: github.com/jessevdk/go-flags
+  version: c6ca198ec95c841fdb89fc0de7496fed11ab854e
+- name: github.com/konsorten/go-windows-terminal-sequences
+  version: 5c8c8bd35d3832f5d134ae1e1e375b69a4d25242
+- name: github.com/mailru/easyjson
+  version: 3fdea8d05856a0c8df22ed4bc71b3219245e4485
+  subpackages:
+  - buffer
+  - jlexer
+  - jwriter
+- name: github.com/mitchellh/mapstructure
+  version: 3536a929edddb9a5b34bd6861dc4a9647cb459fe
+- name: github.com/olivere/elastic
+  version: 1b8e36857caf4b1e6113699ffb38d0981fc7bdae
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
+- name: github.com/PuerkitoBio/purell
+  version: 0bcb03f4b4d0a9428594752bd2a3b9aa0a9d4bd4
+- name: github.com/PuerkitoBio/urlesc
+  version: de5bf2ad457846296e2031421a34e2568e304e35
+- name: github.com/sirupsen/logrus
+  version: 839c75faf7f98a33d445d181f3018b5c3409a45e
+- name: golang.org/x/net
+  version: 66aacef3dd8a676686c7ae3716979581e8b03c47
+  subpackages:
+  - idna
+  - netutil
+- name: golang.org/x/sys
+  version: ebfc5b4631820b793c9010c87fd8fef0f39eb082
+  subpackages:
+  - unix
+- name: golang.org/x/text
+  version: b19bf474d317b857955b12035d2c5acb57ce8b01
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+  - width
+- name: gopkg.in/olivere/elastic.v5
+  version: 1b8e36857caf4b1e6113699ffb38d0981fc7bdae
+  subpackages:
+  - config
+  - uritemplates
+- name: gopkg.in/sohlich/elogrus.v3
+  version: 1cd627c611bbee23b2ee95c0fc17cf29d11f5365
+- name: gopkg.in/yaml.v2
+  version: 5420a8b6744d3b0345ab293f6fcba19c978f1183
+testImports: []
