@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"github.com/go-openapi/runtime/middleware"
 	"github.com/elk_golang_compose/swagger/restapi/operations"
+	"github.com/go-openapi/runtime/middleware"
 )
 
 func init() {
@@ -19,5 +19,6 @@ func (h *Handlers) GetHealthV1(
 	params operations.GetHealthV1Params,
 ) middleware.Responder {
 
+	h.logger.Info("GetHealthV1")
 	return operations.NewGetHealthV1OK().WithPayload("ok")
 }

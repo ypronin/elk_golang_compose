@@ -1,8 +1,7 @@
-
 filebeat.inputs:
 - type: log
   enabled: true
   paths:
-    - /logs/*.log
-output.logstash:
-  hosts: ["127.0.0.1:5044"]
+        - /logs/*.log
+output.elasticsearch:
+  hosts: ["172.17.0.1:9200"]

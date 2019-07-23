@@ -23,18 +23,6 @@ services:
     volumes:
       - ./config/filebeat.yml:/usr/share/filebeat/filebeat.yml
       - ./logs/:/logs/
-
-  logstash:
-    image: docker.elastic.co/logstash/logstash:7.2.0
-    volumes:
-      - ./config/logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro
-    depends_on:
-      - elasticsearch
-    ports:
-     - "12201:12201/udp"
-     - "5044:5044/tcp"
-     - "9600:9600"
-
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.2.0
     environment:
@@ -47,7 +35,6 @@ services:
     ports:
       - 9200:9200
       - 9300:9300
-
   kibana:
     image: docker.elastic.co/kibana/kibana:7.2.0
     depends_on:

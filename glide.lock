@@ -1,8 +1,12 @@
-hash: 6c93b4e5b40e7a5525f806cfb351fa97a8de751fe74ba7b20b18e2dc56212b3d
-updated: 2019-07-22T12:50:36.083949+03:00
+hash: 925dcce4dca472b4fdbdac043e5d1a9c863e3d25e8634b37111bdc1b6c9e6c82
+updated: 2019-07-23T21:04:37.090093+03:00
 imports:
 - name: github.com/asaskevich/govalidator
   version: 7d2e70ef918f16bd6455529af38304d6d025c952
+- name: github.com/davecgh/go-spew
+  version: 8991bc29aa16c548c550c7ff78260e27b9ab7c73
+  subpackages:
+  - spew
 - name: github.com/docker/go-units
   version: 47565b4f722fb6ceae66b95f853feed578a4a51c
 - name: github.com/globalsign/mgo
@@ -38,10 +42,6 @@ imports:
   version: 5899d5c5e619fda5fa86e14795a835f473ca284c
 - name: github.com/go-openapi/validate
   version: d2eab7d93009e9215fc85b2faa2c2f2a98c2af48
-- name: github.com/go-swagger/go-swagger
-  version: 2f32a5a852851b98aa1ed3d0d3d2aab4dcf27c6b
-  subpackages:
-  - examples/oauth2/models
 - name: github.com/jessevdk/go-flags
   version: c6ca198ec95c841fdb89fc0de7496fed11ab854e
 - name: github.com/konsorten/go-windows-terminal-sequences

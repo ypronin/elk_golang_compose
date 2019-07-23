@@ -31,7 +31,7 @@ func main() {
 
 	logger := logging.Init(serviceName)
 
-	client, err := elastic.NewClient(elastic.SetSniff(false), elastic.SetURL("http://127.0.0.1:9200"))
+	client, err := elastic.NewClient(elastic.SetSniff(false), elastic.SetURL("http://172.17.0.1:9200"))
 	if err != nil {
 		logger.Panic(err)
 	}
@@ -50,10 +50,8 @@ func main() {
 		logger.Fatalln(err)
 	}
 
-	logger.Info("Hello world")
-
 	api := operations.NewRelaxAPI(swaggerSpec)
-	handlers := apphandlers.NewHandlers()
+	handlers := apphandlers.NewHandlers(logger)
 	apphandlers.RegisteredHandlerSetter(handlers).BindTo(api)
 
 	server := restapi.NewServer(api)
